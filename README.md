@@ -1,8 +1,5 @@
 # Inteligencia Artificial y Aprendizaje Automático
 
-
-![Logos participantes](figs/logos.png)
-
 ![IA applications](figs/IA.png)
 
 ---
