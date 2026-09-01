@@ -7,11 +7,10 @@
 
 ---
 
-**Fecha:** 21 de abril a 21 mayo de 2025
+**Fecha:** 1 de septiembre al 6 de octubre de 2026
 
 **Responsable:** Dr. Ulises Olivares Pinto  
 
-**Auxiliar:** Fernando Ramírez González
 
 ## Objetivo General
 Desarrollar una comprensión profunda y aplicada de los principios y técnicas fundamentales de la inteligencia artificial y el aprendizaje profundo, capacitando a los participantes para diseñar, implementar y evaluar soluciones avanzadas en diversos contextos y problemas reales.
