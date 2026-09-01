@@ -1,6 +1,6 @@
 # Inteligencia Artificial y Aprendizaje Automático
 
-![IA applications](figs/IA.png)
+![IA applications](figs/bg.png)
 
 ---
 
