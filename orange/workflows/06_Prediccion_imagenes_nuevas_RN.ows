@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scheme version="2.0" title="06 Predicción de imágenes nuevas con red neuronal" description="Entrenar modelo con embeddings y predecir imágenes nuevas">
+  <nodes>
+    <node id="0" name="Import Images" qualified_name="orangecontrib.imageanalytics.widgets.owimageimport.OWImportImages" project_name="Orange3-ImageAnalytics" version="" title="Entrenamiento: imagenes_demo" position="(50.0, 100.0)" />
+    <node id="1" name="Image Embedding" qualified_name="orangecontrib.imageanalytics.widgets.owimageembedding.OWImageEmbedding" project_name="Orange3-ImageAnalytics" version="" title="Embeddings de entrenamiento" position="(300.0, 100.0)" />
+    <node id="2" name="Neural Network" qualified_name="Orange.widgets.model.owneuralnetwork.OWNNLearner" project_name="Orange3" version="" title="Entrenar MLP" position="(550.0, 100.0)" />
+    <node id="3" name="Import Images" qualified_name="orangecontrib.imageanalytics.widgets.owimageimport.OWImportImages" project_name="Orange3-ImageAnalytics" version="" title="Nuevas: imagenes_nuevas" position="(50.0, 350.0)" />
+    <node id="4" name="Image Embedding" qualified_name="orangecontrib.imageanalytics.widgets.owimageembedding.OWImageEmbedding" project_name="Orange3-ImageAnalytics" version="" title="Embeddings nuevos" position="(300.0, 350.0)" />
+    <node id="5" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predicciones" position="(800.0, 270.0)" />
+    <node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Revisar predicciones" position="(1040.0, 270.0)" />
+  </nodes>
+  <links>
+    <link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Images" enabled="true" />
+    <link id="1" source_node_id="1" sink_node_id="2" source_channel="Embeddings" sink_channel="Data" enabled="true" />
+    <link id="2" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Images" enabled="true" />
+    <link id="3" source_node_id="4" sink_node_id="5" source_channel="Embeddings" sink_channel="Data" enabled="true" />
+    <link id="4" source_node_id="2" sink_node_id="5" source_channel="Model" sink_channel="Predictors" enabled="true" />
+    <link id="5" source_node_id="5" sink_node_id="6" source_channel="Predictions" sink_channel="Data" enabled="true" />
+  </links>
+  <annotations />
+  <thumbnail />
+  <node_properties />
+</scheme>

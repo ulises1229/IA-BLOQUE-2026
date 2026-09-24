@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scheme version="2.0" title="05 RETO - Clasificador de imágenes con red neuronal" description="Completar conexiones y configurar la red neuronal">
+  <nodes>
+    <node id="0" name="Import Images" qualified_name="orangecontrib.imageanalytics.widgets.owimageimport.OWImportImages" project_name="Orange3-ImageAnalytics" version="" title="1. Cargar imágenes" position="(80.0, 190.0)" />
+    <node id="1" name="Image Embedding" qualified_name="orangecontrib.imageanalytics.widgets.owimageembedding.OWImageEmbedding" project_name="Orange3-ImageAnalytics" version="" title="2. Image Embedding" position="(330.0, 190.0)" />
+    <node id="2" name="Image Grid" qualified_name="orangecontrib.imageanalytics.widgets.owimagegrid.OWImageGrid" project_name="Orange3-ImageAnalytics" version="" title="Explorar imágenes" position="(600.0, 55.0)" />
+    <node id="3" name="Neural Network" qualified_name="Orange.widgets.model.owneuralnetwork.OWNNLearner" project_name="Orange3" version="" title="3. Configura la red neuronal" position="(600.0, 240.0)" />
+    <node id="4" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="4. Evaluar" position="(850.0, 190.0)" />
+    <node id="5" name="Confusion Matrix" qualified_name="Orange.widgets.evaluate.owconfusionmatrix.OWConfusionMatrix" project_name="Orange3" version="" title="5. Analizar errores" position="(1080.0, 190.0)" />
+  </nodes>
+  <links>
+    <link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Images" enabled="true" />
+    <link id="1" source_node_id="1" sink_node_id="2" source_channel="Embeddings" sink_channel="Embeddings" enabled="true" />
+  </links>
+  <annotations />
+  <thumbnail />
+  <node_properties />
+</scheme>

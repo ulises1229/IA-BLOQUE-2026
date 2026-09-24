@@ -1,0 +1,13 @@
+Las imágenes de este dataset didáctico se generan mediante transformaciones (recortes, rotación y cambios de color) a partir de dos imágenes de ejemplo distribuidas con scikit-learn.
+
+china.jpg
+Licencia: Creative Commons Attribution 2.0
+Autor/atribución: danielbuechele
+Fuente original indicada por scikit-learn: https://www.flickr.com/photos/danielbuechele/6061409035/
+
+flower.jpg
+Licencia: Creative Commons Attribution 2.0
+Autor/atribución: vultilion
+Fuente original indicada por scikit-learn: https://www.flickr.com/photos/vultilion/6056698931/
+
+Uso: exclusivamente demostrativo y educativo.

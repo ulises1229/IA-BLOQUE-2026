@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scheme version="2.0" title="01 AED visual - Iris" description="IA Bloque - Orange Data Mining">
+  <nodes>
+    <node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="1. Cargar datos" position="(100.0, 120.0)" />
+    <node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Ver tabla" position="(330.0, 60.0)" />
+    <node id="2" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distribuciones" position="(330.0, 170.0)" />
+    <node id="3" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Relaciones" position="(560.0, 120.0)" />
+    <node id="4" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Comparar grupos" position="(560.0, 250.0)" />
+  </nodes>
+  <links>
+    <link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="3" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+  </links>
+  <annotations />
+  <thumbnail />
+  <node_properties />
+</scheme>

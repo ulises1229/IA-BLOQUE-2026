@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scheme version="2.0" title="02 Clasificación visual - Titanic" description="IA Bloque - Orange Data Mining">
+  <nodes>
+    <node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="1. Cargar datos" position="(80.0, 180.0)" />
+    <node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectColumns" project_name="Orange3" version="" title="2. Elegir objetivo" position="(300.0, 180.0)" />
+    <node id="2" name="Preprocess" qualified_name="Orange.widgets.data.owpreprocess.OWPreprocess" project_name="Orange3" version="" title="3. Preprocesar" position="(520.0, 180.0)" />
+    <node id="3" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Regresión logística" position="(760.0, 40.0)" />
+    <node id="4" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Árbol" position="(760.0, 130.0)" />
+    <node id="5" name="kNN" qualified_name="Orange.widgets.model.owknn.OWKNNLearner" project_name="Orange3" version="" title="kNN" position="(760.0, 220.0)" />
+    <node id="6" name="Random Forest" qualified_name="Orange.widgets.model.owrandomforest.OWRandomForest" project_name="Orange3" version="" title="Bosque aleatorio" position="(760.0, 310.0)" />
+    <node id="7" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="4. Comparar modelos" position="(1020.0, 180.0)" />
+    <node id="8" name="Confusion Matrix" qualified_name="Orange.widgets.evaluate.owconfusionmatrix.OWConfusionMatrix" project_name="Orange3" version="" title="5. Matriz de confusión" position="(1240.0, 180.0)" />
+    <node id="9" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predicciones" position="(1240.0, 320.0)" />
+  </nodes>
+  <links>
+    <link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="2" source_node_id="2" sink_node_id="7" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" />
+    <link id="3" source_node_id="3" sink_node_id="7" source_channel="Learner" sink_channel="Learner" enabled="true" />
+    <link id="4" source_node_id="4" sink_node_id="7" source_channel="Learner" sink_channel="Learner" enabled="true" />
+    <link id="5" source_node_id="5" sink_node_id="7" source_channel="Learner" sink_channel="Learner" enabled="true" />
+    <link id="6" source_node_id="6" sink_node_id="7" source_channel="Learner" sink_channel="Learner" enabled="true" />
+    <link id="7" source_node_id="7" sink_node_id="8" source_channel="Evaluation Results" sink_channel="Evaluation Results" enabled="true" />
+    <link id="8" source_node_id="2" sink_node_id="9" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" />
+    <link id="9" source_node_id="3" sink_node_id="9" source_channel="Learner" sink_channel="Predictors" enabled="true" />
+    <link id="10" source_node_id="4" sink_node_id="9" source_channel="Learner" sink_channel="Predictors" enabled="true" />
+  </links>
+  <annotations />
+  <thumbnail />
+  <node_properties />
+</scheme>

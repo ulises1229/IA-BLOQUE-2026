@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scheme version="2.0" title="04 Agrupamiento - Wine" description="IA Bloque - Orange Data Mining">
+  <nodes>
+    <node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="1. Wine" position="(80.0, 150.0)" />
+    <node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Tabla" position="(280.0, 60.0)" />
+    <node id="2" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Pares de variables" position="(280.0, 200.0)" />
+    <node id="3" name="k-Means" qualified_name="Orange.widgets.unsupervised.owkmeans.OWKMeans" project_name="Orange3" version="" title="Agrupar" position="(520.0, 150.0)" />
+    <node id="4" name="Silhouette Plot" qualified_name="Orange.widgets.unsupervised.owsilhouetteplot.OWSilhouettePlot" project_name="Orange3" version="" title="Calidad de clusters" position="(760.0, 150.0)" />
+    <node id="5" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Datos agrupados" position="(760.0, 300.0)" />
+  </nodes>
+  <links>
+    <link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="3" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+    <link id="4" source_node_id="3" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" />
+  </links>
+  <annotations />
+  <thumbnail />
+  <node_properties />
+</scheme>
